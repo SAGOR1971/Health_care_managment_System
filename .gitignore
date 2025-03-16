@@ -1,0 +1,28 @@
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Logs
+*.log
+error_log
+access_log
+
+# Cache files
+*.cache
+*.tmp
+
+# Uploaded files
+/uploads/
+/patient_uploads/
+/doctor_uploads/
+
+# System files
+.DS_Store
+Thumbs.db 
