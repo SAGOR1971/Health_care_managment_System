@@ -1,0 +1,14 @@
+[build]
+builder = "nixpacks"
+buildCommand = "composer install --no-dev"
+
+[deploy]
+startCommand = "php -S 0.0.0.0:$PORT -t public"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[deploy.env]
+APP_ENV = "production"
+APP_DEBUG = "false" 
